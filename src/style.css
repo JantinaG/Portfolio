@@ -4,13 +4,14 @@
   --text: #000000;
   --first-color: #e1eacd;
   --second-color: #bad8b6;
-  --thrid-color: #61b390;
+  --third-color: #61b390;
   --fourth-color: #01352c;
   --font: "Source Code Pro", monospace;
 }
 
 body {
   font-family: var(--font) !important;
+  background-color: var(--second-color);
 }
 
 /* Header styling*/
@@ -42,13 +43,85 @@ header a {
 }
 
 /* Generic styling */
-.content {
+h2 {
+  margin-bottom: 50px;
+}
+
+/* NavBar Styling */
+
+/* About me Styling */
+#about-me {
   max-width: 900px;
   margin: 0 auto;
+  margin-top: 80px;
+}
+
+.about-me {
+  color: var(--primary-text);
+}
+
+.about-me a:hover {
+  color: var(--second-color);
+  background: var(--fourth-color);
+}
+/* Skills Styling */
+.skills {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+/* Projects Styling */
+.dark-box {
+  background-color: var(--fourth-color);
+  transform: skewY(-11deg);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#projects {
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--second-color);
+  margin-bottom: 90px;
+  transform: skewY(11deg);
+}
+
+#projects a {
+  color: var(--second-color);
+}
+
+#projects a:hover {
+  color: var(--fourth-color);
+  background: var(--first-color);
 }
 
 img {
   max-width: 400px;
+}
+
+/* Contact me Styling */
+#contact-me {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+  color: var(--primary-text)
+}
+
+#contact-me h2 {
+  color: var(--second-color);
+  position: relative;
+  bottom: 70px;
+}
+
+#contact-me a {
+  color: var(--primary-text)
+}
+
+#contact-me a:hover {
+  color: var(--primary-text);
+  font-weight: bolder;
 }
 
 /* Footer styling */
