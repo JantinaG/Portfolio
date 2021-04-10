@@ -1,0 +1,16 @@
+:root {
+  --primary-text: #212121;
+  --secondary-text: #757575;
+  --text: #000000;
+  --first-color: #e1eacd;
+  --second-color: #bad8b6;
+  --thrid-color: #61b390;
+  --fourth-color: #01352c;
+  --font: "Source Code Pro", monospace;
+}
+
+body {
+  font-family: var(--font) !important;
+}
+
+
