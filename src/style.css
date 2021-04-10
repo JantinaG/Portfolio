@@ -97,17 +97,34 @@ h2 {
   transform: skewY(11deg);
 }
 
-#projects a {
+.text-link {
   color: var(--second-color);
 }
 
-#projects a:hover {
+.text-link:hover {
   color: var(--fourth-color);
   background: var(--first-color);
 }
 
 img {
   max-width: 400px;
+}
+
+.project-links a {
+  background: var(--second-color);
+  color: var(--fourth-color);
+}
+
+.project-links a:hover {
+  background: var(--third-color);
+  font-weight: bolder;
+}
+
+.b-side {
+  border-right: 1px solid var(--third-color);
+}
+.b-top {
+  border-top: 1px solid var(--third-color);
 }
 
 /* Contact me Styling */
@@ -144,4 +161,53 @@ footer a {
 footer a:hover {
   color: var(--primary-text);
   font-weight: bolder;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 38pt;
+  }
+
+  h3 {
+    font-size: 26pt;
+  }
+
+  h4 {
+    font-size: 16pt;
+    font-weight: bolder;
+  }
+
+  header a {
+    font-size: 16pt;
+  }
+
+  h2,
+  p,
+  .text-link {
+    margin-left: 58px;
+    margin-right: 58px;
+  }
+
+  .b-bottom {
+    border-bottom: 1px solid var(--third-color);
+  }
+  .b-side {
+    border-right: 0;
+  }
+  .b-top {
+    border-top: 0;
+  }
+}
+
+@media (max-width: 440px) {
+  img {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .navbar {
+    padding-left: 0 !important;
+  }
 }
